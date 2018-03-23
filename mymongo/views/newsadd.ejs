@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			table{
+				width: 100%;
+				border-collapse: collapse;
+				font-size: 14px;
+			}
+			
+			table td{
+				border: solid 1px #eee;
+				padding-right: 5px;
+				height: 30px;
+				font-family: "微软雅黑";
+			}
+			
+			table td.leftlable{
+				width: 100px;
+				text-align: right;
+			}
+			
+			table td input{
+				width: 200px;
+				border: solid 1px #eee;
+				margin-left: 5px;
+				height:20px;
+			}
+			
+			table td textarea{
+				width: 500px;
+				height:200px;
+				border: solid 1px #eee;
+				margin: 5px;		
+			}
+			
+			#btnsave{
+				width: 80px;
+				background-color: darkorange;
+				color: white;
+				border:solid 1px #FF8C00;
+				height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="/news/newsadd" method="post"><!--action表示把数据提交到/news/newsadd method指定提交的方式为：post-->
+			<table cellpadding="0" cellspacing="0">
+				<tr><td class="leftlable">标题</td><td><input type="text" name="tbtitle" id="tbtitle"/></td></tr>
+				<tr><td class="leftlable">作者</td><td><input type="text" name="tbauthor" id="tbauthor"/></td></tr>
+				<tr><td class="leftlable">来源</td><td><input type="text" name="tbsource" id="tbsource"/></td></tr>
+				<tr><td class="leftlable">内容</td><td><textarea name="tbcontent" id="tbcontent" rows="5" cols="20"></textarea></td></tr>
+				<tr><td class="leftlable">&nbsp;</td><td><input type="submit" id="btnsave" value="发布" onclick="return v();"/></td></tr>
+			</table>	
+		</form>
+	<script type="text/javascript">
+			function  v()
+			{
+				var tbtitle=document.getElementById("tbtitle");
+				if(!tbtitle.value.length>0)
+				{
+					alert("请输入新闻的标题");
+					tbtitle.focus();
+					return false;
+				}
+
+				var tbauthor=document.getElementById("tbauthor");
+				if(!tbauthor.value.length>0)
+				{
+					alert("请输入新闻的作者");
+					tbauthor.focus();
+					return false;
+				}
+
+				var tbsource=document.getElementById("tbsource");
+				if(!tbsource.value.length>0)
+				{
+					alert("请输入新闻的来源");
+					tbsource.focus();
+					return false;
+				}
+
+				var tbcontent=document.getElementById("tbcontent");
+				if(!tbcontent.value.length>0)
+				{
+					alert("请输入新闻的内容");
+					tbcontent.focus();
+					return false;
+				}
+			}
+
+	</script>
+	</body>
+</html>
