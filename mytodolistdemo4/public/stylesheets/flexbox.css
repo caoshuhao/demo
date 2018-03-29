@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box,
+.p2,
+.p3 {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.box1 {
+    width: 250px;
+    height: 250px;
+    margin: 0px auto;
+    background-color: #E7E7E7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: #D7D7D7 0px 0px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.col {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.p2 .box2 {
+    justify-content: space-between;
+}
+
+.p2 .col:nth-child(1) {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.p2 .col:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.p3 .box2 {
+    justify-content: space-between;
+}
+
+.p3 .col:nth-child(1) {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.p3 .col:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.p3 .col:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.point {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #323332;
+    box-shadow: #020202 3px 0px 3px 3px inset, 0px -3px 3px 3px #494848 inset;
+}

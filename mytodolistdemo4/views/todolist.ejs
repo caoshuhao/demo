@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>todolist</title>
+    <!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
+
+</head>
+<link rel="stylesheet" type="text/css" href="stylesheets/todo2.css" />
+<!-- <script src="javascripts/move.js"></script> -->
+
+<!-- <script src="javascripts/todolist2.js" type="text/javascript" charset="utf-8"></script> -->
+<!-- 使用requirejs引入文件 -->
+<!-- <script type="text/javascript" data-main="javascripts/main.js" src="javascripts/require.js" defer async></script> -->
+<!-- 使用webpack打包引入文件 -->
+<script src="javascripts/0.bundle.js"></script>
+<!-- <script src="javascripts/1.bundle.js"></script> -->
+<script src="javascripts/bundle.js"></script>
+
+<body>
+    <div class="todobox">
+        <div class="todotop">
+            <div class="text">
+                ToDoList
+            </div>
+
+            <input type="text" placeholder="添加ToDo" name="" id="todoinput" value="" autofocus="autofocus" />
+
+        </div>
+        <button class="addlist">新增任务</button>
+        <div class="todolist ongoing">
+            <div class="listtop">
+                <span>正在进行</span><span></span>
+            </div>
+            <div class="list list1">
+                <ul id="ullist">
+                    <!--<li><span><input type="checkbox" name="" id="" value="" style="zoom:180%"/>学习js</span><span class="del">X</span></li>
+						-->
+                </ul>
+            </div>
+        </div>
+        <div class="todolist done">
+            <div class="listtop">
+                <span>已经完成</span><span></span>
+            </div>
+            <div class="list list2">
+                <ul id="donelist">
+                    <!--<li><span><input type="checkbox" name="" id="" value="" style="zoom:180%"/>完成学习js2</span><span class="del">X</span></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

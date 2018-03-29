@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.todobox {
+    width: 930px;
+    margin: 0px auto;
+    background-color: #CDCDCD;
+    padding: 0 0 20px 0;
+}
+
+.todobox .todolist {
+    padding: 0px 50px;
+}
+
+.todobox .todolist .listtop {
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todobox .todolist .listtop span:nth-child(1) {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.todobox .todolist .listtop span:nth-child(2) {
+    display: block;
+    background-color: #E2E0EF;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 5px;
+    align-self: center;
+    text-align: center;
+    line-height: 25px !important;
+}
+
+.todobox .todolist .list ul li:last-child {
+    margin-bottom: 0px !important;
+}
+
+.todobox .todolist .list ul,
+.todobox .todolist .list1 ul,
+.todobox .todolist .list2 ul {
+    list-style: none;
+}
+
+.todobox .todolist .list ul li,
+.todobox .todolist .list1 ul li,
+.todobox .todolist .list2 ul li {
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addlist {
+    width: 80px;
+    height: 40px;
+    align-content: center;
+    font-size: 18px;
+}
+
+.todobox .todolist .list ul li>span,
+.todobox .todolist .list1 ul li>span,
+.todobox .todolist .list2 ul li>span {
+    display: block;
+    font-size: 23px;
+    font-weight: 400;
+    display: flex;
+    align-content: center;
+}
+
+.todobox .todolist .list ul li>span>span:nth-child(1),
+.todobox .todolist .list1 ul li>span>span:nth-child(1),
+.todobox .todolist .list2 ul li>span>span:nth-child(1) {
+    display: block;
+    width: 10px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #629798;
+}
+
+.todobox .todolist .list ul li span:last-child,
+.todobox .todolist .list1 ul li span:last-child,
+.todobox .todolist .list2 ul li span:last-child {
+    margin-right: 20px;
+}
+
+.todobox .todolist .list ul li input,
+.todobox .todolist .list1 ul li input,
+.todobox .todolist .list2 ul li input {
+    align-self: center;
+    margin-right: 5px;
+    display: flex;
+}
+
+.todobox .todolist .list1 ul li {
+    background-color: white;
+}
+
+.todobox .todolist .list2 ul li {
+    background-color: #E6E6E6;
+    color: #848484;
+}
+
+.todobox .todolist .list2 ul li>span span:nth-child(1) {
+    background-color: #B3B3B3 !important;
+}
+
+.todobox .todotop {
+    height: 60px;
+    background-color: #313131;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todobox .todotop .text {
+    color: white;
+    font-size: large;
+    line-height: 60px;
+    width: 140px;
+}
+
+.todobox .todotop input {
+    width: 490px;
+    height: 32px;
+    border-radius: 5px;
+    align-self: center;
+    outline: none;
+    text-indent: 20px;
+    font-size: large;
+    color: gray;
+}
+
+.liborder {
+    border: solid 1px black
+}
+
+.liborder2 {
+    border: none;
+}
